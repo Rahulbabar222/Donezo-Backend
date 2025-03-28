@@ -7,17 +7,17 @@ A full-stack Todo List application with enhanced features like MongoDB-backed st
 Will be hosted soon....
 
 
-📌 Features
+## 📌 Features
 
-✅ Add, edit, delete tasks
-✅ Mark tasks as completed
-✅ Labels and categories for tasks
-✅ Reminders & Notifications for tasks ⏰
-✅ Pomodoro Timer for better focus ⏳
-✅ Timestamps: Date & Time of task creation
-✅ Persistent storage using MongoDB (No Local Storage!)
-✅ RESTful API for backend services
-✅ Fully responsive UI
+✅ Add, edit, delete tasks  
+✅ Mark tasks as completed  
+✅ Labels and categories for tasks  
+✅ Reminders & Notifications for tasks ⏰  
+✅ Pomodoro Timer for better focus ⏳  
+✅ Timestamps: Date & Time of task creation  
+✅ Persistent storage using MongoDB (No Local Storage!)  
+✅ RESTful API for backend services  
+✅ Fully responsive UI  
 
 ## 🔧 Frontend - [View Github Repo](https://github.com/Rahulbabar222/Donezo-Frontend.git "Visit Repo")
 
