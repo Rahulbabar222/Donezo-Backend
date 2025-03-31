@@ -53,11 +53,11 @@ app.post("/labels", async (req, res) => {
 app.put("/todos/:id", async (req, res) => {
     try {
         const { id } = req.params;
-        const { todo,label } = req.body;
+        const { todo,label,reminder } = req.body;
 
         const updatedTodo = await Todo.findByIdAndUpdate(
             id,
-            { todo,label},
+            { todo,label,reminder},
             { new: true }  // ✅ Fix: This ensures the updated document is returned
         );
 
