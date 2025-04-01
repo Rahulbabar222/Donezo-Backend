@@ -5,7 +5,8 @@ const todoSchema = new mongoose.Schema({
     isCompleted: Boolean,
     label:String,
     createdAt: { type: Date, default: Date.now },
-    reminder: {type: Date}
+    reminder: {type: Date},
+    priority: String
 });
 
 export const Todo = mongoose.model("Todo", todoSchema);

@@ -23,8 +23,8 @@ app.get("/todos", async (req, res) => {
 });
 
 app.post("/todos", async (req, res) => {
-    const { todo,label,reminder } = req.body;
-    const newTodo = new Todo({ todo, isCompleted:false, label,createdAt: new Date(),reminder });
+    const { todo,label,reminder,priority } = req.body;
+    const newTodo = new Todo({ todo, isCompleted:false, label,createdAt: new Date(),reminder,priority });
 
     try {
         await newTodo.save();
@@ -53,11 +53,11 @@ app.post("/labels", async (req, res) => {
 app.put("/todos/:id", async (req, res) => {
     try {
         const { id } = req.params;
-        const { todo,label,reminder } = req.body;
+        const { todo,label,reminder,priority } = req.body;
 
         const updatedTodo = await Todo.findByIdAndUpdate(
             id,
-            { todo,label,reminder},
+            { todo,label,reminder,priority},
             { new: true }  // ✅ Fix: This ensures the updated document is returned
         );
 
